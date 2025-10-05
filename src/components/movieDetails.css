@@ -1,0 +1,88 @@
+/* src/components/MovieDetails.css */
+
+.movie-details-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.movie-details-content {
+  background-color: #333;
+  color: #eee;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 900px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #f0f0f0;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.close-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.details-header {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.details-header img {
+  max-width: 250px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.details-info {
+  flex: 1;
+  min-width: 300px; /* Ensure info doesn't get too cramped */
+}
+
+.details-info h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.details-info p {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.details-info strong {
+  color: #aaa;
+}
+
+.error {
+  color: #ff6b6b;
+  text-align: center;
+}
