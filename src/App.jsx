@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import MovieCard from "./components/movieCard";
-import MovieDetails from "./components/movieDetails";
+import MovieDetails from "./components/MovieInfo";
 import "./App.css";
 
 export default function App() {
@@ -46,7 +46,7 @@ export default function App() {
     "RRR",
     "Avengers Endgame",
     "Black Panther",
-    
+
   ];
 
   useEffect(() => {

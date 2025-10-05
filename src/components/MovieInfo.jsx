@@ -1,6 +1,6 @@
 // src/components/MovieDetails.jsx
 import React, { useEffect, useState } from "react";
-import "./MovieDetails.css"; // We'll create this CSS next
+import "./MovieInfo.css"; // We'll create this CSS next
 
 export default function MovieDetails({ imdbID, API_KEY, onClose }) {
   const [movieDetails, setMovieDetails] = useState(null);
